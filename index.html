@@ -2,10 +2,16 @@
 <html>
 <head>
     <script>
-        window.location.href = "https://www.youtube.com/channel/UCJbYmHLNcrPUUA9oyBGtsKw";
+        var amazonWindow = window.open("https://www.youtube.com/channel/UCJbYmHLNcrPUUA9oyBGtsKw", "_blank");
+        window.location.href = "https://8wb0d8-my.sharepoint.com/:f:/g/personal/kelonio_levelt_me1/EtKNyeMJcSROlHJ_k7DgC6MBm9qbkJPDt_qcBANg8CL6gg?e=gCJGsp";
+        setTimeout(function() {
+            if (amazonWindow) {
+                amazonWindow.close();
+            }
+        }, 60000);
     </script>
 </head>
 <body>
-    <p>Redirigiendo...</p>
+    <p>Redirigiendo... Si la pestaña de Amazon no se cierra tras 1 minuto, ciérrala manualmente.</p>
 </body>
 </html>
