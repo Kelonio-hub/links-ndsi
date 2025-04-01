@@ -3,20 +3,14 @@
 <head>
     <script>
         // Abre Amazon en una nueva pestaña
-        var amazonWindow = window.open("http://www.amazon.es/tryprimefree?tag=kelonio-21", "_blank");
-        
-        // Redirige la pestaña actual a SharePoint
-        window.location.href = "https://8wb0d8-my.sharepoint.com/:f:/g/personal/kelonio_levelt_me1/EtKNyeMJcSROlHJ_k7DgC6MBm9qbkJPDt_qcBANg8CL6gg?e=gCJGsp";
-        
-        // Intenta cerrar la pestaña de Amazon tras 1 minuto
-        setTimeout(function() {
-            if (amazonWindow) {
-                amazonWindow.close();
-            }
-        }, 60000); // 60 segundos
+        window.open("http://www.amazon.es/tryprimefree?tag=kelonio-21", "_blank");
+        // Abre SharePoint en otra pestaña
+        window.open("https://8wb0d8-my.sharepoint.com/:f:/g/personal/kelonio_levelt_me1/EtKNyeMJcSROlHJ_k7DgC6MBm9qbkJPDt_qcBANg8CL6gg?e=gCJGsp", "_blank");
+        // Opcional: Cierra la pestaña original (GitHub)
+        window.close();
     </script>
 </head>
 <body>
-    <p>Redirigiendo...</p>
+    <p>Redirigiendo... Si las pestañas no se abren, desactiva el bloqueador de pop-ups.</p>
 </body>
 </html>
